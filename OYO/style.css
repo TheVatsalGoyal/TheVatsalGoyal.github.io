@@ -24,6 +24,8 @@ button {
 /* ================= TOP BAR ================= */
 .top-bar {
     display: grid;
+    position: sticky;
+    top: 0;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
     padding: 14px 40px;
