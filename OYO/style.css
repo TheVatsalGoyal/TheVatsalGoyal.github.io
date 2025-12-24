@@ -230,11 +230,16 @@ button {
     gap: 30px;
 }
 
-.room-card {
+.room-card{
+    transition: transform .2s;
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.room-card:hover {
+    transform: scale(1.03);
+    border: 2px solid #444343;
 }
 
 .room-card img {
