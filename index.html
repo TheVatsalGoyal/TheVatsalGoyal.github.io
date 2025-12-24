@@ -1,121 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>OYO Clone | Book Hotels</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYO | Save up to 70% on Hotels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="top-header">
-  <!-- TOP INFO BAR -->
-<div class="top-bar">
-  <div class="top-left">
-    <img src="https://images.icon-icons.com/3913/PNG/512/oyo_logo_icon_248266.png" class="oyo-logo">
-
-    <div class="top-item">
-      <strong>Become a Member</strong>
-      <span>Additional 10% off on stays</span>
+<!-- ================= TOP BAR ================= -->
+<nav class="top-bar">
+    <div class="top-left">
+        <!-- Use the logo YOU already have -->
+        <img src="https://images.icon-icons.com/3913/PNG/512/oyo_logo_icon_248266.png" alt="OYO Logo" class="logo">
     </div>
+    <a href="#"><i class="fa-solid fa-briefcase"></i>OYO for Business</a>
+    <a href="#"><i class="fa-solid fa-city"></i>List your property</a>
+    <a href="#"><i class="fa-solid fa-phone"></i>0124-6201611</a>
+    <a href="#" class="grey"><i class="fa-solid fa-globe"></i>English</a>
+    <a href="#" class="login-btn grey"><i class="fa-solid fa-user"></i>Login / Signup</a>
+</nav>
 
-    <div class="top-item">
-      <strong>OYO for Business</strong>
-      <span>Trusted by 5000 Corporates</span>
-    </div>
+<!-- ================= CITY BAR ================= -->
+<section class="city-bar">
+    <a href="#">Bangalore</a>
+    <a href="#">Chennai</a>
+    <a href="#">Delhi</a>
+    <a href="#">Gurgaon</a>
+    <a href="#">Hyderabad</a>
+    <a href="#">Mumbai</a>
+    <a href="#">Pune</a>
+    <a href="#">All Cities</a>
+</section>
 
-    <div class="top-item">
-      <strong>List your property</strong>
-      <span>Start earning in 30 mins</span>
-    </div>
-  </div>
-
-  <div class="top-right">
-    <span>📞 0124-6201611</span>
-    <span>🌐 English</span>
-    <span class="login-btn">Login / Signup</span>
-  </div>
-</div>
-
-<!-- CITY NAV BAR -->
-<div class="city-bar">
-  <a href="#">Bangalore</a>
-  <a href="#">Chennai</a>
-  <a href="#">Delhi</a>
-  <a href="#">Gurgaon</a>
-  <a href="#">Hyderabad</a>
-  <a href="#">Kolkata</a>
-  <a href="#">Mumbai</a>
-  <a href="#">Noida</a>
-  <a href="#">Pune</a>
-  <a href="#">All Cities</a>
-</div>
-
-</header>
-
-<!-- SEARCH SECTION -->
+<!-- ================= SEARCH SECTION ================= -->
 <section class="search-section">
-  <h1>Over 174,000+ hotels and homes across 35+ countries</h1>
+    <h1>Over 174,000+ hotels and homes across 35+ countries</h1>
 
-  <div class="search-box">
-    <input type="text" placeholder="Search by city, hotel, or neighborhood">
-    <input type="date">
-    <input type="date">
-    <select>
-      <option>1 Room, 1 Guest</option>
-      <option>1 Room, 2 Guests</option>
-      <option>2 Rooms</option>
-    </select>
-    <button>Search</button>
-  </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search by city, hotel, or neighbourhood">
+        <input type="text" placeholder="Check-in → Check-out">
+        <input type="text" placeholder="1 Room, 1 Guest">
+        <button class="search-btn">Search</button>
+    </div>
 </section>
 
-<!-- OFFER BANNER -->
-<section class="offer">
-  <div class="offer-text">
-    <h2>Book 1, get 1 free!</h2>
-    <p>Book for 2 Nights, Pay for 1</p>
-    <button>Book now</button>
-  </div>
-  <div class="offer-img">
-    <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210f0">
-  </div>
+<!-- ================= OFFER BANNER ================= -->
+<section class="offer-banner">
+    <div class="offer-left">
+        <img src="images/qr.png" alt="QR Code">
+        <div class="offer-text">
+            <h2>Book 1, get 1 free!</h2>
+            <p>Book for 2 Nights, Pay for 1</p>
+            <button>Book now</button>
+        </div>
+    </div>
+
+    <div class="offer-right">
+        <img src="images/offer.png" alt="Offer Image">
+    </div>
 </section>
 
-<!-- MAP SECTION -->
-<section class="map-section">
-  <div class="map-left">
-    <img src="./World map.png" alt="World Map">
-  </div>
-  <div class="map-right">
-    <img src="./There.png" alt="not">
-  </div>
+<!-- ================= DEAL ALERT ================= -->
+<section class="deal-alert">
+    <div class="deal-badge">
+        <div class="deal-icon">
+            <i class="fa-solid fa-fire"></i>
+        </div>
+        <div class="deal-text">
+            <h3>Get access to exclusive deals</h3>
+            <p>Only the best deals reach your inbox</p>
+        </div>
+    </div>
+
+    <div class="deal-input">
+        <input type="email" placeholder="e.g. john@email.com">
+        <button>Notify me</button>
+    </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div>
-      <h4>About OYO</h4>
-      <a href="#">About Us</a>
-      <a href="#">Careers</a>
-      <a href="#">Blogs</a>
-      <a href="#">Support</a>
+<!-- ================= WORLD MAP SECTION ================= -->
+<section class="world-section">
+    <div class="world-left">
+        <img src="images/World map.png" alt="World Map">
     </div>
-    <div>
-      <h4>Legal</h4>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Trust & Safety</a>
-    </div>
-    <div>
-      <h4>Download App</h4>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
-    </div>
-  </div>
 
-  <p class="copyright">© 2025 OYO Clone | HTML & CSS Project</p>
+    <div class="world-right">
+        <h2>There's an OYO around. Always.</h2>
+        <p>More Destinations. More Ease. More Affordable.</p>
+
+        <div class="stats">
+            <div>
+                <h3>35+</h3>
+                <p>Countries</p>
+            </div>
+            <div>
+                <h3>174,000+</h3>
+                <p>Hotels & Homes</p>
+            </div>
+        </div>
+
+        <!-- Country list (icons you’ll add later) -->
+        <div class="country-list">
+            <span><i class="fa-solid fa-circle" style="color: #ff7043;"></i>Indonesia</span>
+            <span><i class="fa-solid fa-circle" style="color: #ff0000;"></i>Malaysia</span>
+            <span><i class="fa-solid fa-circle" style="color: #0008ff;"></i>Denmark</span>
+            <span><i class="fa-solid fa-circle" style="color: #fffc34;"></i>US</span>
+            <span><i class="fa-solid fa-circle" style="color: #50e116;"></i>UK</span>
+            <span><i class="fa-solid fa-circle" style="color: #ff1ef0;"></i>Netherlands</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-top">
+        <div>
+            <h3>World's leading chain of hotels and homes</h3>
+            <p>Download OYO app for exciting offers.</p>
+            <br>
+            <div class="app-links">
+                <a href="https://play.google.com/store/apps/details?id=com.oyo.consumer&hl=en"><i class="fa-brands fa-apple"></i>For IOS</a>
+                <a href="https://itunes.apple.com/in/app/oyo-rooms-book-delightful/id988141624?mt=8"><i class="fa-brands fa-google-play"></i>For Android</a>
+            </div>
+        </div>
+
+        <div>
+            <button class="property-btn">List your property</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Blogs</a>
+        <a href="#">Support</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+    </div>
+
+    <!-- Simple watermark (teacher-safe) -->
+    <p class="watermark">Educational Project • Clone by Vatsal Goyal</p>
 </footer>
 
 </body>
