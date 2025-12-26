@@ -255,6 +255,41 @@ button {
     padding: 8px 24px 16px;
 }
 
+/* ================= OFFER ================= */
+.offer-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.offer-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform .2s;
+}
+
+.offer-card:hover {
+    transform: scale(1.03);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+}
+
+.offer-card h3 {
+    padding: 16px 24px 8px;
+}
+
+.offer-card p {
+    padding: 8px 24px 16px;
+}
+
+
+
+
 /* ================= WORLD MAP ================= */
 .world-section {
     max-width: 1200px;
@@ -285,6 +320,13 @@ button {
     gap: 16px;
 }
 
+/* ================= DETAILS ================= */
+.details-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
 /* ================= FOOTER ================= */
 .footer {
     background: #6b7377;
