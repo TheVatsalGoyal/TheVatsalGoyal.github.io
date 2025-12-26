@@ -287,6 +287,83 @@ button {
     padding: 8px 24px 16px;
 }
 
+/* ================= MEMBERSHIP ================= */
+.membership-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.membership-left {
+    flex: 1;
+}
+.membership-left h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.membership-left p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.join-btn {
+    background: #1ab64f;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.join-btn:hover {
+    background: #159c3c;
+}
+
+
+.membership-right {
+    flex: 1;
+    text-align: center;
+}
+.membership-right img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+/* ================= MEMBERSHIP CARD ================= */
+.membership-card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1300px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.membership-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform .2s;
+}
+
+.membership-card:hover {
+    transform: scale(1.03);
+}
+
+.membership-card img {
+    width: 100%;
+    height: auto;
+}
+
+.membership-card h3 {
+    padding: 16px 24px 8px;
+}
+
+.membership-card p {
+    padding: 8px 24px 16px;
+}
 
 
 
