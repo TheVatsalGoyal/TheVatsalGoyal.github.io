@@ -129,9 +129,16 @@ span{
     justify-content: space-evenly;
 }
 
-.pannel-ops p{
+.pannel-ops a{
     display: inline;
     margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.pannel-ops a:hover{
+    border: 1.5px solid white;
+    height: 3;
 }
 
 .pannel-ops{
@@ -262,20 +269,34 @@ h2{
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     justify-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.text p{
+.text a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.text a:hover{
+    text-decoration: underline;
 }
 
 .divider{
     border-top: 1px solid #717a89;
     margin: 0.1px 0;
     width: 100%;
+}
+
+.divider img{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .copyright{
