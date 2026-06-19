@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Herbal Tea 🌷</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div class="floating-hearts"></div>
+
+<!-- ================= LOGIN PAGE ================= -->
+
+<section id="loginPage" class="page active">
+
+    <div class="envelope-card">
+
+        <h1>💌 Secret Only For You</h1>
+
+        <p>
+            A little birthday surprise made specially
+            for someone amazing 🌷
+        </p>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Username">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+        <button onclick="login()">
+            Open with a Smile ❤️
+        </button>
+
+        <p id="loginError"></p>
+
+    </div>
+
+</section>
+
+<!-- ================= COVER PAGE ================= -->
+
+<section id="coverPage" class="page">
+
+    <div class="scrapbook-cover">
+
+        <div class="cover-left">
+
+            <img src="images/photo1.jpg" alt="Herbal Tea">
+
+        </div>
+
+        <div class="cover-right">
+
+            <h1 class="birthday-title">
+                Happy Birthday 🌷
+            </h1>
+
+            <h2 class="friend-name">
+                Herbal Tea
+            </h2>
+
+            <p>
+                A small collection of memories,
+                smiles and appreciation.
+            </p>
+
+            <button onclick="showPage('memoryPage')">
+                Start Journey ❤️
+            </button>
+
+        </div>
+
+        <div class="mini-polaroid p1">
+            <img src="images/photo2.jpg">
+        </div>
+
+        <div class="mini-polaroid p2">
+            <img src="images/photo3.jpg">
+        </div>
+
+        <div class="mini-polaroid p3">
+            <img src="images/photo4.jpg">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= MEMORY WALL ================= -->
+
+<section id="memoryPage" class="page">
+
+    <div class="memory-container">
+
+        <h2>📸 Some Sweet Memories</h2>
+
+        <div class="photo-grid">
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo5.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo6.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo7.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo8.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo9.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo10.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo11.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo12.jpg">
+            </div>
+            <div class="polaroid rotate-left">
+                <img src="images/photo14.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo15.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo16.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo17.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo18.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo19.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo20.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo21.jpg">
+            </div>
+            <div class="polaroid rotate-left">
+                <img src="images/photo22.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo23.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo24.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo25.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo26.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo27.jpg">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="images/photo28.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo29.jpg">
+            </div>
+            
+            <div class="polaroid rotate-left">
+                <img src="images/photo30.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo31.jpg">
+            </div>
+            <div class="polaroid rotate-left">
+                <img src="images/photo32.jpg">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="images/photo33.jpg">
+            </div>
+            
+        </div>
+
+        <button onclick="showPage('specialPage')">
+            Continue 🌷
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= SPECIAL PAGE ================= -->
+
+<section id="specialPage" class="page">
+
+    <div class="paper-card">
+
+        <h2>🌷 Reasons You're Special</h2>
+
+        <div class="reason-card">
+            🌷 You make conversations better.
+        </div>
+
+        <div class="reason-card">
+            🌷 You make people feel comfortable.
+        </div>
+
+        <div class="reason-card">
+            🌷 You bring positive energy.
+        </div>
+
+        <div class="reason-card">
+            🌷 You are genuinely kind.
+        </div>
+
+        <div class="reason-card">
+            🌷 You are unforgettable.
+        </div>
+
+        <button onclick="showPage('cakePage')">
+    Make A Wish 🎂
+</button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CAKE PAGE ================= -->
+
+<section id="cakePage" class="page">
+
+    <div class="paper-card">
+
+        <h2>🎂 Make A Wish</h2>
+ <br><br> 
+        <p>
+            Before we continue...
+            make a birthday wish 🌷
+        </p>
+<br><br> <br><br> 
+        <div class="cake-wrapper">
+               
+            <div class="cake">
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button onclick="blowCandles()">
+            🕯 Blow The Candles
+        </button>
+        <p id="wishMessage"></p>
+
+        <br><br>
+
+        <button onclick="showPage('letterPage')">
+            Continue 💌
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= LETTER PAGE ================= -->
+
+<section id="letterPage" class="page">
+
+    <div class="letter-container">
+
+        <div class="letter">
+
+            <img src="images/Letter.png" alt="Letter Background" class="letter-bg" style="width:100%; height:100%; size:cover;">
+            
+
+        </div>
+
+        <button onclick="showPage('giftPage')">
+            Continue ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= GIFT PAGE ================= -->
+
+<section id="giftPage" class="page">
+
+    <div class="gift-container">
+
+        <h2>🎁 Special Gift</h2>
+
+        <div class="gift-box" onclick="openGift()">
+            🎁
+        </div>
+
+        <div id="giftMessage">
+
+            <h3>For Herbal Tea 🌷</h3>
+
+            <p>
+                [WRITE YOUR SPECIAL GIFT MESSAGE HERE]
+            </p>
+
+        </div>
+
+        <button onclick="showPage('finalPage')">
+            Final Surprise ✨
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FINAL PAGE ================= -->
+
+<section id="finalPage" class="page">
+
+    <div class="final-card">
+
+        <h1>
+            Happy Birthday
+            Baby Girl 🌷
+        </h1>
+
+        <p>
+
+            Thank you for all the memories,
+            the conversations,
+            and the friendship.
+
+        </p>
+
+        <p>
+
+            I hope this year brings you
+            everything you deserve.
+
+        </p>
+
+        <h2>❤️🌷✨</h2>
+        <h3>From: Your Shwarty Vatsal Goyal</h3>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

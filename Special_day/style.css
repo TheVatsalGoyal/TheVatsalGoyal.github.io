@@ -1,0 +1,709 @@
+
+/* ===================================
+   GLOBAL
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:#f6efe7;
+
+    background-image:
+    radial-gradient(
+        rgba(125,90,80,.08) 1px,
+        transparent 1px
+    );
+
+    background-size:20px 20px;
+
+    color:#5f4b43;
+}
+
+/* ===================================
+   PAGE SYSTEM
+=================================== */
+
+.page{
+    display:none;
+
+    min-height:100vh;
+
+    padding:40px 20px;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.page.active{
+    display:flex;
+}
+
+/* ===================================
+   FLOATING HEARTS
+=================================== */
+
+.floating-hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.floating-hearts::before,
+.floating-hearts::after{
+    content:"💖";
+    position:absolute;
+    font-size:30px;
+    animation:floatHeart 12s linear infinite;
+}
+
+.floating-hearts::before{
+    left:15%;
+}
+
+.floating-hearts::after{
+    left:80%;
+    animation-delay:6s;
+}
+
+@keyframes floatHeart{
+
+    from{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-150px);
+        opacity:0;
+    }
+
+}
+
+/* ===================================
+   LOGIN PAGE
+=================================== */
+
+.envelope-card{
+
+    width:min(92%,450px);
+
+    background:#fffdf8;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.envelope-card h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:3rem;
+
+    color:#b26a77;
+
+    margin-bottom:20px;
+
+}
+
+.envelope-card p{
+
+    margin-bottom:25px;
+
+    line-height:1.8;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#f4ebe4;
+
+    font-size:1rem;
+
+    outline:none;
+
+}
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #d8a7b1,
+        #c58ea0
+    );
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+#loginError{
+
+    color:#c95c5c;
+
+    margin-top:15px;
+
+}
+
+/* ===================================
+   COVER PAGE
+=================================== */
+
+.scrapbook-cover{
+
+    position:relative;
+
+    width:min(1200px,95%);
+
+    background:#fffdf8;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    display:grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap:40px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.cover-left img{
+
+    width:100%;
+
+    height:550px;
+
+    object-fit:cover;
+
+    border:15px solid white;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.cover-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.birthday-title{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:4rem;
+    line-height:1.2;
+
+    color:#7d5a50;
+
+    margin-bottom:20px;
+
+}
+
+.cover-right p{
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+    margin-bottom:30px;
+
+}
+
+/* ===================================
+   MINI POLAROIDS
+=================================== */
+
+.mini-polaroid{
+
+    position:absolute;
+
+    width:180px;
+
+    background:white;
+
+    padding:12px;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.mini-polaroid img{
+
+    width:100%;
+    display:block;
+
+}
+
+.p1{
+    top:30px;
+    right:40px;
+    transform:rotate(8deg);
+}
+
+.p2{
+    bottom:40px;
+    right:120px;
+    transform:rotate(-10deg);
+}
+
+.p3{
+    top:260px;
+    right:-20px;
+    transform:rotate(12deg);
+}
+
+/* ===================================
+   MEMORY WALL
+=================================== */
+
+.memory-container{
+
+    width:min(1300px,95%);
+
+    text-align:center;
+
+}
+
+.memory-container h2{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:4rem;
+
+    margin-bottom:40px;
+
+}
+
+.photo-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:40px;
+
+}
+
+.polaroid{
+
+    background:white;
+
+    padding:15px 15px 60px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+
+    transition:.4s;
+
+}
+
+.polaroid:hover{
+
+    transform:scale(1.04);
+
+}
+
+.polaroid img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+}
+
+.rotate-left{
+    transform:rotate(-6deg);
+}
+
+.rotate-right{
+    transform:rotate(6deg);
+}
+
+/* ===================================
+   SPECIAL PAGE
+=================================== */
+
+.paper-card{
+
+    width:min(900px,95%);
+
+    background:#fffdf8;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.paper-card h2{
+
+    text-align:center;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:3.5rem;
+
+    margin-bottom:30px;
+
+}
+
+.reason-card{
+
+    background:#f7efe7;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    font-size:1.05rem;
+
+}
+
+/* ===================================
+   LETTER
+=================================== */
+
+.letter-container{
+
+    width:min(900px,95%);
+
+    text-align:center;
+
+}
+
+.letter{
+
+    background:#fffdf8;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:left;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.letter h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:3rem;
+
+}
+
+#letterText{
+
+    white-space:pre-line;
+
+    line-height:2.2;
+
+    font-size:1.05rem;
+
+}
+
+/* ===================================
+   GIFT
+=================================== */
+
+.gift-container{
+
+    text-align:center;
+
+}
+
+.gift-container h2{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:4rem;
+
+}
+
+.gift-box{
+
+    font-size:130px;
+
+    cursor:pointer;
+
+    margin:20px 0;
+
+    transition:.4s;
+
+}
+
+.gift-box:hover{
+
+    transform:scale(1.15)
+    rotate(8deg);
+
+}
+
+#giftMessage{
+
+    display:none;
+
+    max-width:700px;
+
+    background:#fffdf8;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    margin:20px auto;
+
+}
+
+/* ===================================
+   FINAL PAGE
+=================================== */
+
+.final-card{
+
+    max-width:900px;
+
+    background:#fffdf8;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.final-card h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:5rem;
+
+    color:#7d5a50;
+
+    margin-bottom:20px;
+
+}
+
+.final-card p{
+
+    line-height:2;
+
+    font-size:1.1rem;
+
+    margin-bottom:20px;
+
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media(max-width:900px){
+
+    .scrapbook-cover{
+
+        grid-template-columns:1fr;
+
+        padding:30px;
+
+    }
+
+    .cover-left img{
+
+        height:450px;
+
+    }
+
+    .birthday-title{
+
+        font-size:3rem;
+
+    }
+
+    .mini-polaroid{
+
+        display:none;
+
+    }
+
+    .memory-container h2{
+
+        font-size:3rem;
+
+    }
+
+    .final-card h1{
+
+        font-size:3rem;
+
+    }
+
+}
+
+/* ======================
+   BIRTHDAY CAKE
+====================== */
+
+.cake-wrapper{
+
+    display:flex;
+    justify-content:center;
+
+    margin:30px 0;
+
+}
+
+.cake{
+
+    width:250px;
+    height:120px;
+
+    background:#ffb7c5;
+
+    border-radius:15px;
+
+    position:relative;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.candle{
+
+    width:12px;
+    height:60px;
+
+    background:red;
+
+    position:absolute;
+
+    top:-55px;
+
+}
+
+.candle:nth-child(1){
+    left:55px;
+}
+
+.candle:nth-child(2){
+    left:120px;
+}
+
+.candle:nth-child(3){
+    left:185px;
+}
+
+.flame{
+
+    width:16px;
+    height:24px;
+
+    background:gold;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:-20px;
+    left:-2px;
+
+    animation:flicker .5s infinite alternate;
+
+}
+
+@keyframes flicker{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.15);
+    }
+
+}
+
+.friend-name{
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #b26a77;
+    font-family: 'Playfair Display', serif;
+}
