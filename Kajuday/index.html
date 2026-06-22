@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kaju ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<!-- ===================== MUSIC ===================== -->
+<audio id="birthdayMusic" loop>
+    <source src="music/birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ===================== FLOATING ELEMENTS ===================== -->
+<div class="floating-container">
+    <span>✨</span>
+    <span>💖</span>
+    <span>🌸</span>
+    <span>✨</span>
+    <span>🖤</span>
+    <span>💜</span>
+</div>
+
+<!-- ===================== LOGIN PAGE ===================== -->
+<section id="loginPage" class="page active">
+
+    <div class="glass-card login-card">
+
+        <h1>🎂 Birthday Access 🎂</h1>
+
+        <p class="subtitle">
+            A special surprise is waiting...
+        </p>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Username">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+        <button onclick="login()">
+            Unlock Surprise ✨
+        </button>
+
+        <p id="loginError"></p>
+
+    </div>
+
+</section>
+
+<!-- ===================== WELCOME PAGE ===================== -->
+<section id="welcomePage" class="page">
+
+    <div class="glass-card">
+
+        <h1 class="main-title">
+            🎂 Happy Birthday Kaju ❤️
+        </h1>
+
+        <p class="welcome-text">
+            Today is not just another day...
+            It's the day someone truly special
+            came into this world.
+        </p>
+
+        <p class="welcome-text">
+            A journey full of memories,
+            surprises and smiles
+            is waiting for you.
+        </p>
+
+        <button onclick="showPage('galleryPage')">
+            💖 Start Surprise
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== GALLERY PAGE ===================== -->
+<section id="galleryPage" class="page">
+
+    <div class="glass-card gallery-card">
+
+        <h2>📸 Our Beautiful Memories</h2>
+
+        <div class="gallery-container">
+
+            <img id="galleryImage"
+                 src="images/photo1.jpg"
+                 alt="Memory">
+
+        </div>
+        
+
+        <div class="gallery-controls">
+
+            <button onclick="previousImage()">
+                ⬅ Previous
+            </button>
+
+            <button onclick="nextImage()">
+                Next ➡
+            </button>
+
+        </div>
+
+        <button class="bottom-btn"
+                onclick="showPage('cakePage')">
+
+            🎂 Next Surprise
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== CAKE PAGE ===================== -->
+<section id="cakePage" class="page">
+
+    <div class="glass-card">
+
+        <h2>🎂 Make A Wish</h2>
+
+        <p>
+            Every candle represents
+            a beautiful moment waiting
+            for you in the year ahead.
+        </p>
+
+        <br><br><br><br>
+
+        <div class="cake-wrapper">
+
+            <div class="cake">
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button onclick="blowCandles()">
+            🕯 Blow The Candles
+        </button>
+
+        <button class="bottom-btn"
+                onclick="showPage('messagePage')">
+
+            Continue ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== MESSAGE PAGE ===================== -->
+
+      <section id="messagePage" class="page">
+
+    <div class="glass-card">
+
+        <h2>💌 What I Want To Say</h2>
+
+        <div id="typewriterBox">
+
+            <img
+                src="images/Letter.png"
+                alt="Birthday Letter"
+                class="letter-image">
+
+        </div>
+
+        <!-- CONTINUE BUTTON -->
+        <button onclick="showPage('giftPage')">
+            💜 Continue
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== GIFT PAGE ===================== -->
+<section id="giftPage" class="page">
+
+    <div class="glass-card">
+
+        <h2>🎁 Special Gift</h2>
+
+        <div class="gift-box"
+             onclick="openGift()">
+
+            🎁
+
+        </div>
+
+        <div id="giftMessage">
+
+            <h3>Special Surprise</h3>
+            
+            <p>
+                [WRITE YOUR GIFT MESSAGE HERE]
+            </p>
+
+            <p>
+                Replace this text
+                with your secret gift,
+                letter, video link,
+                or special surprise.
+            </p>
+
+        </div>
+
+        <button onclick="showPage('finalPage')">
+            ✨ Final Surprise
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== FINAL PAGE ===================== -->
+<section id="finalPage" class="page">
+
+    <div class="glass-card">
+
+        <h1>🎉 Happy Birthday Kaju ❤️</h1>
+
+        <p class="final-text">
+
+            May your smile never fade,
+            your dreams come true,
+            and your life always remain
+            full of happiness.
+
+        </p>
+
+        <p class="final-text">
+
+            Thank you for being
+            an amazing person.
+
+        </p>
+
+        <h2>🎂✨💖</h2>
+
+        <button onclick="launchFireworks()">
+            🎆 Celebrate
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== SCRIPT ===================== -->
+<script src="./script.js"></script>
+
+</body>
+</html>
